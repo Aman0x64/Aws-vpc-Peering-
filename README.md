@@ -1,4 +1,4 @@
- <div align="center">
+<div align="center">
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" width="190" alt="Amazon Web Services Logo"/>
 
@@ -6,9 +6,12 @@
 
 ### Secure Private Communication Between Two Amazon VPCs
 
-[![AWS](https://img.shields.io/badge/Cloud-AWS-orange?logo=amazonaws)](https://aws.amazon.com/)
-[![Service](https://img.shields.io/badge/Service-VPC%20Peering-purple)](https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html)
-[![Region](https://img.shields.io/badge/Region-ap--southeast--2-blue)](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/)
+**Built with Amazon Web Services ☁️**
+
+![AWS](https://img.shields.io/badge/Cloud-AWS-orange?logo=amazonaws)
+![Networking](https://img.shields.io/badge/Networking-VPC%20Peering-blue)
+![Region](https://img.shields.io/badge/Region-ap--southeast--2-purple)
+![Status](https://img.shields.io/badge/PROJECT-COMPLETED-brightgreen?style=for-the-badge&logo=checkmarx)
 
 </div>
 
@@ -18,68 +21,68 @@
 
 A hands-on AWS networking project demonstrating secure communication between two isolated Virtual Private Clouds (VPCs) using **VPC Peering**.
 
-The project establishes private connectivity between EC2 instances through route tables, security groups, and a bastion host, while validating bidirectional network communication.
+The project establishes private connectivity between EC2 instances through route tables, security groups, and a bastion host. Network communication is validated through SSH and bidirectional ICMP testing.
 
-## 🏗️ Architecture
+## 🏗️ Network Architecture
 
 | Component | Configuration |
 |---|---|
 | VPC A | `10.10.0.0/16` |
 | VPC B | `10.20.0.0/16` |
-| Public Subnet | `10.10.1.0/24` |
+| Public Subnet A | `10.10.1.0/24` |
 | Private Subnet A | `10.10.2.0/24` |
 | Private Subnet B | `10.20.1.0/24` |
-| Region | Sydney (`ap-southeast-2`) |
+| AWS Region | Sydney (`ap-southeast-2`) |
 | Connectivity | VPC Peering |
 
 ### Infrastructure Components
 
 - **VPC A:** Public and private subnet architecture.
 - **VPC B:** Private-only network architecture.
-- **Bastion Host:** Secure SSH access to private instances.
-- **VPC Peering:** Private communication between the two VPCs.
-- **Route Tables:** Bidirectional traffic routing.
+- **Bastion Host:** Secure SSH entry point.
+- **VPC Peering:** Private communication between both VPCs.
+- **Route Tables:** Bidirectional network routing.
 - **Security Groups:** Controlled SSH and ICMP traffic.
 
-## 🔄 Connectivity Validation
+## 🔄 Connectivity Testing
 
-The following tests were performed:
+The following tests were performed to validate private network communication:
 
-- Forward Ping: App-A → App-B
-- Reverse Ping: App-B → App-A
-- SSH connectivity to private EC2 instances.
-- Controlled ICMP failure testing.
-- Connectivity restoration after security group rule recovery.
+| Test | Result |
+|---|---|
+| Forward Ping (App-A → App-B) | ✅ Successful |
+| Reverse Ping (App-B → App-A) | ✅ Successful |
+| SSH to private EC2 instances | ✅ Successful |
+| Controlled ICMP failure | ✅ Verified |
+| Connectivity recovery | ✅ Verified |
 
 ## 📸 Project Screenshots
 
-### 1. VPC Peering Configuration
+### 01. AWS Infrastructure
 
-![VPC Peering Configuration](screenshots/ss1.png)
+![AWS Infrastructure](https://raw.githubusercontent.com/Aman0x64/Aws-vpc-Peering-/main/Aws-vpc-peering-proj/screenshots/ss1.png)
 
-### 2. Connectivity Testing
+### 02. VPC Peering Configuration
 
-![Connectivity Testing](screenshots/ss2.png)
+![VPC Peering](https://raw.githubusercontent.com/Aman0x64/Aws-vpc-Peering-/main/Aws-vpc-peering-proj/screenshots/ss2.png)
 
-### 3. EC2 Instance Connect
+### 03. EC2 Connectivity Testing
 
-![EC2 Instance Connect](screenshots/ss3.png)
+![EC2 Connectivity](https://raw.githubusercontent.com/Aman0x64/Aws-vpc-Peering-/main/Aws-vpc-peering-proj/screenshots/ss3.png)
 
-## 📄 Detailed Project Report
+## 📄 Project Documentation
 
-The complete project documentation includes architecture, AWS configurations, route tables, security groups, SSH validation, connectivity testing, and implementation evidence.
+The detailed project report contains the network architecture, AWS configurations, route tables, security groups, SSH validation, connectivity testing, and implementation evidence.
 
 <div align="center">
 
-### 📘 AWS VPC Peering Report
+### 📘 Complete Project Report
 
-**[📖 View Full Project Report (PDF)](Aman_Mishra_EWB_VPC_Peering.pdf)**
+**[📖 VIEW FULL PROJECT REPORT](./report/)**
 
-*Click to open the report in GitHub's PDF preview.*
+*Open the report folder to access the PDF documentation.*
 
 </div>
-
----
 
 ## 🛠️ Technologies Used
 
@@ -94,12 +97,12 @@ The complete project documentation includes architecture, AWS configurations, ro
 
 ## 🎯 Key Learnings
 
-- Understanding VPC isolation and network architecture.
-- Configuring VPC Peering connections.
-- Implementing bidirectional routing.
+- Designing isolated cloud networks.
+- Establishing VPC Peering connections.
+- Configuring bidirectional network routes.
 - Managing private EC2 connectivity.
-- Applying network-level security controls.
-- Troubleshooting connectivity using ICMP and SSH.
+- Implementing security group restrictions.
+- Troubleshooting network connectivity using ICMP and SSH.
 
 ## 👨‍💻 Author
 
@@ -110,6 +113,10 @@ B.Sc. Information Technology
 
 <div align="center">
 
-**Built with ☁️ Amazon Web Services**
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" width="120" alt="AWS Logo"/>
+
+### Built with Amazon Web Services
+
+*Designed, configured, and tested by Aman Mishra.*
 
 </div>
