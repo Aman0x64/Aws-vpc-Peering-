@@ -58,15 +58,15 @@ The following tests were performed to validate private network communication:
 
 ## 📸 Project Screenshots
 
-### 01. AWS Infrastructure
+### 01. Reverse ping Testing
 
 ![AWS Infrastructure](https://raw.githubusercontent.com/Aman0x64/Aws-vpc-Peering-/main/Aws-vpc-peering-proj/screenshots/ss1.png)
 
-### 02. VPC Peering Configuration
+### 02. ICMP recovery testing
 
 ![VPC Peering](https://raw.githubusercontent.com/Aman0x64/Aws-vpc-Peering-/main/Aws-vpc-peering-proj/screenshots/ss2.png)
 
-### 03. EC2 Connectivity Testing
+### 03. ICMP failure 
 
 ![EC2 Connectivity](https://raw.githubusercontent.com/Aman0x64/Aws-vpc-Peering-/main/Aws-vpc-peering-proj/screenshots/ss3.png)
 
@@ -116,7 +116,6 @@ B.Sc. Information Technology
 <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" width="120" alt="AWS Logo"/>
 
 ### Built with Amazon Web Services
-
-*Designed, configured, and tested by Aman Mishra.*
+**Learned AWS in internship program with EWB**
 
 </div>
