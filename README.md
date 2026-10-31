@@ -1,5 +1,14 @@
-# ☁️ AWS VPC Peering | Private Network Connectivity
+## ☁️ AWS VPC Peering | Private Network Connectivity
+<div align="center">
 
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS Logo" width="180"/>
+AWS VPC Peering Project
+Secure Private Communication Between Two Amazon VPCs
+
+
+
+
+</div>
 <p align="center">
   <b>Connecting Two Isolated AWS Virtual Private Clouds Through Secure VPC Peering</b>
 </p>
@@ -24,6 +33,12 @@ The objective was to establish private communication between two isolated Virtua
 A bastion host provides secure administrative access to the private EC2 instances, while VPC Peering enables direct communication between workloads across both VPCs.
 
 **The result:** Two independent VPCs communicating over private network paths without requiring public IP addresses on either application server.
+
+## 📄 Project Documentation
+
+The complete project report includes the AWS architecture, VPC configuration, route tables, security groups, connectivity testing, SSH validation, and implementation evidence.
+
+📥 **[Download AWS VPC Peering Project Report (PDF)](Aman_Mishra_EWB_VPC_Peering.pdf)**
 
 ## 🏗️ Architecture
 
@@ -184,6 +199,7 @@ B.Sc. Information Technology
   <br/>
   <i>Learning Cloud Networking Through Hands-On AWS Implementation.</i>
 </p>
+
 
 
 ## 📸 Project Screenshots
